@@ -125,3 +125,10 @@ body {
   display: flex;
   gap: 2vw;
 }
+
+.art:hover,
+.print-circle-inactive:hover,
+.frame-pic:hover,
+.colorbox:hover {
+  cursor: pointer;
+}
