@@ -14,7 +14,7 @@ if (data) {
 function render() {
   document.querySelector(
     ".product-img"
-  ).src = `img/${state.artwork}-${state.frame}.jpg`;
+  ).src = `newimg/${state.artwork}-${state.frame}-${state.boxColor}.jpg`;
 
   document.querySelectorAll(".print-wrap > *").forEach((item) => {
     item.classList.remove("active");
@@ -64,8 +64,8 @@ document.querySelector(".cat").onclick = () => {
   updateState({ artwork: "cat" });
 };
 
-document.querySelector(".catsky").onclick = () => {
-  updateState({ artwork: "catsky" });
+document.querySelector(".skycat").onclick = () => {
+  updateState({ artwork: "skycat" });
 };
 
 document.querySelector(".A4").onclick = () => {
